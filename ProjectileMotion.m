@@ -1,4 +1,4 @@
-function [range, height]=LinearDragProjectile(v0,theta0,D1,m)
+function [range, height]=ProjectileMotion(v0,theta0,D1,m)
 g=9.8;
 c=[0;1/2;1/2;1];
 a=[0 0 0 0;1/2 0 0 0;0 1/2 0 0;0 0 1 0];
@@ -20,4 +20,6 @@ while s(2,i)>=0
     i=i+1;
     plot(s(1,:),s(2,:));
 end
+range=max(s(1,:));
+height=max(s(2,:));
 end
