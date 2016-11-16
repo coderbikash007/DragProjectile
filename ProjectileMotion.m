@@ -20,6 +20,4 @@ while s(2,i)>=0
     i=i+1;
     plot(s(1,:),s(2,:));
 end
-range=max(s(1,:));
-height=max(s(2,:));
 end
